@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Project</title>
+  <meta name="description" content="My first EPAM Project.">
+
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
 
 <body>
@@ -36,7 +37,10 @@
     </div>
   </header>
 
-  <section class="app-section app-section--image-overlay app-section--image-peak">
+  <website-section
+        title="Your Hewebsite-sectionadline Here"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod."
+    class="app-section app-section--image-overlay app-section--image-peak">
     <img src="assets/images/your-logo-here.png" alt="Logo icon picture" class="app-logo" />
 
     <h1 class="app-title">
@@ -45,9 +49,13 @@
     <h2 class="app-subtitle">
       Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit sed do eiusmod.
     </h2>
-  </section>
+  </website-section>
 
-  <section class="app-section">
+  <website-section
+        title=" This is the Section Headline, Continues to Two Lines"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod."
+        class="app-section"
+      >
     <h2 class="app-title">
       This is the Section Headline,<br /> Continues to Two Lines
     </h2>
@@ -70,9 +78,13 @@
     <button class="app-section__button app-section__button--read-more">
       Read more
     </button>
-  </section>
+  </website-section>
 
-  <section class="app-section app-section--image-culture">
+  <website-section
+        title="Learn more about our culture..."
+        description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+        class="app-section app-section--image-culture"
+      >
     <h2 class="app-title">
       Learn more<br /> about our culture...
     </h2>
@@ -85,7 +97,7 @@
       Duis aute irure dolor in <br />reprehenderit in voluptate velit esse
       <br /> cillum dolore eu fugiat nulla
     </h3>
-  </section>
+  </website-section>
 
   <footer class="app-footer">
     <div class="app-footer__logo">

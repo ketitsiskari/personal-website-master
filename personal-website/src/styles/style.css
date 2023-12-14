@@ -169,7 +169,7 @@ main {
 }
 
 .app-section--image-peak {
-  background: linear-gradient(to top, rgba(65, 65, 65, .5), rgba(65, 65, 65, .5)), url(../assets/images/your-image-here.jpg) no-repeat center/cover;
+  background: linear-gradient(to top, rgba(65, 65, 65, .5), rgba(65, 65, 65, .5)), url(../assets/images/your-image-here.WebP) no-repeat center/cover;
   height: 800px;
   max-width: 100%;
   color: white;
@@ -193,7 +193,7 @@ main {
 }
 
 .app-section--image-culture {
-  background: linear-gradient(to top, rgba(65, 65, 65, .7), rgba(65, 65, 65, .7)), url(../assets/images/your-image.jpg) no-repeat center/cover;
+  background: linear-gradient(to top, rgba(65, 65, 65, .7), rgba(65, 65, 65, .7)), url(../assets/images/your-image.WebP) no-repeat center/cover;
   height: 698px;
   max-width: 100%;
   color: white;
@@ -207,6 +207,64 @@ main {
   padding: 0;
   font-size: 4rem;
 }
+
+  /* join section */
+  .join-section {
+    position: relative;
+    position: relative;
+    background: url(../assets/images/join.WebP) no-repeat top/cover;
+  height: 500px;
+  max-width: 100%;
+  color: white;
+
+    display: flex;
+  }
+
+  .cover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .join-program-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "oswald";
+    line-height: 64px;
+    color: white;
+  }
+  
+  .join-program-subtitle {
+    font-size: 22px;
+    color: white;
+  }
+  
+  .email-input {
+    margin: 20px;
+    width: 400px;
+    height: 36px;
+    border: none;
+    outline: none;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+  
+  .email-input::placeholder {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 10px;
+  }
+  
+  .subscribe-button {
+    padding: 10px 20px;
+    background-color: #55c2d8;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
 
 .app-footer {
   background-color: #3b3d40;
@@ -280,6 +338,7 @@ main {
   .app-section__button--read-more {
     margin: 24px auto 48px;
   }
+
   .app-footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
@@ -290,5 +349,107 @@ main {
   }
   .app-footer__rights {
     justify-self: flex-start;
+  }
+}
+
+.community-section {
+  text-align: center;
+  padding: 40px 40px 80px 40px;
+}
+
+.section-heading h2 {
+  font-family: Oswald;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #464547;
+}
+
+.section-heading p {
+  font-family: Source Sans Pro;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #666666;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.community-item {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+
+.community-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.community-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.community-item:last-child {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.community-item .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.community-item .designation {
+  font-size: 14px;
+  color: #888;
+}
+
+p.designation {
+  color: #333;
+  background-color: #f9f9f9;
+}
+address.app-footer__address,
+p.app-footer__rights,
+a.app-footer__email {
+  color: rgba(255, 255, 255, 0.7);
+}
+div.community-item {
+  background-color: #f7f7f7;
+}
+
+button.app-section__button.app-section__button--read-more,
+button.subscribe-button {
+  background-color: #55c2d8;
+  color: white;
+}
+
+address.app-footer__address,
+p.app-footer__rights,
+a.app-footer__email {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .community-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .community-grid {
+    grid-template-columns: 1fr;
   }
 }
