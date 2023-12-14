@@ -1,5 +1,15 @@
-# Personal Website
+# 🚀 Welcome to your new awesome project!
 
-## Run
+This project has been created using **webpack-cli**, you can now run
 
-* Open `index.html` in browser (latest Google Chrome is recommended)
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application
